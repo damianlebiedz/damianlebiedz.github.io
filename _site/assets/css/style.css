@@ -1001,6 +1001,14 @@ a:hover {
   color: #819198;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111111;
+  color: #ffffff;
+}
+
 .page-header {
   height: 100vh;
   display: flex;
@@ -1035,21 +1043,6 @@ nav {
   gap: 10px; /* Odstęp pomiędzy przyciskami */
 }
 
-.nav-button {
-  color: white;
-  background-color: #157878;
-  border: none;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.nav-button:hover {
-  background-color: #125a5a;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -1057,9 +1050,11 @@ html {
 .site-footer {
   margin: 20px; /* Dodaje margines wokół całej stopki */
   padding: 20px; /* Dodaje wewnętrzny margines (padding) */
-  background-color: #f9f9f9; /* Opcjonalnie, zmiana koloru tła dla lepszego kontrastu */
+  background-color: #111111; /* Opcjonalnie, zmiana koloru tła dla lepszego kontrastu */
+  color: #ffffff; /* Biały kolor tekstu */
+  padding: 20px;
+  border-top: 1px solid #333333; /* Opcjonalna linia oddzielająca */
   text-align: center; /* Wyśrodkowuje tekst w stopce */
-  border-top: 1px solid #ccc; /* Opcjonalnie, dodaje górną ramkę dla wizualnego oddzielenia */
 }
 
 .nav-button {
@@ -1073,7 +1068,122 @@ html {
 }
 
 .nav-button:hover {
-  background-color: #0f4c47; /* Kolor tła guzika po najechaniu myszą */
+  background-color: #383838;
+  text-decoration: none; /* Usunięcie podkreślenia tekstu */
+}
+
+.project-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trzy kolumny */
+  gap: 20px; /* Odstęp między kafelkami */
+  color: black;
+}
+
+.project-tile {
+  background-color: rgb(100, 100, 100); /* Kolor tła dla kafelka */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+  overflow: hidden; /* Ukrycie nadmiaru */
+  text-decoration: none; /* Usunięcie podkreślenia linków */
+  color: black;
+}
+
+.project-tile img {
+  width: 100%; /* Szerokość obrazka */
+  height: auto; /* Automatyczna wysokość */
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* Wyrównanie w pionie */
+}
+
+.about-image {
+  border-radius: 50%; /* Okrągłe zdjęcie */
+  width: 150px; /* Szerokość zdjęcia */
+  height: 150px; /* Wysokość zdjęcia */
+  margin-right: 20px; /* Odstęp między zdjęciem a tekstem */
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trzy kolumny */
+  gap: 20px; /* Odstęp między kafelkami */
+  color: black;
+}
+
+.skill-tile {
+  background-color: rgb(100, 100, 100); /* Kolor tła dla kafelka */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+  overflow: hidden; /* Ukrycie nadmiaru */
+  text-decoration: none; /* Usunięcie podkreślenia linków */
+  color: black;
+}
+
+.skill-tile img {
+  width: 100%; /* Szerokość obrazka */
+  height: auto; /* Automatyczna wysokość */
+}
+
+#projekty {
+  text-align: center; /* Wyrównuje tytuł i kafelki na środku */
+  padding: 40px 0; /* Dodaje przestrzeń nad i pod sekcją */
+}
+
+#projekty h2 {
+  color: white;
+  text-align: center;
+}
+
+#projekty h3 {
+  color: white;
+  text-align: center;
+}
+
+#o-mnie h2 {
+  color: white;
+  text-align: center;
+}
+
+#umiejetnosci h2 {
+  color: white;
+  text-align: center;
+}
+
+#umiejetnosci h3 {
+  color: white;
+}
+
+.project-content h3 {
+  margin: 0; /* Usuwa domyślne marginesy nagłówka */
+}
+
+.project-content p {
+  margin-top: 10px; /* Dodaje przestrzeń pomiędzy nagłówkiem a opisem */
+}
+
+#o-mnie {
+  display: flex;
+  flex-direction: column; /* Ustawia elementy w kolumnie */
+  align-items: center; /* Wyrównuje elementy do środka */
+  padding: 40px 0; /* Przestrzeń nad i pod sekcją */
+}
+
+#o-mnie img {
+  width: 250px; /* Szerokość zdjęcia */
+  height: 250px; /* Wysokość zdjęcia */
+  border-radius: 50%; /* Ustawia zdjęcie w kształcie okręgu */
+  margin: 20px 0px; /* Przestrzeń nad i pod zdjęciem */
+}
+
+#o-mnie h2 {
+  margin: 0 0 10px; /* Ustawia margines dla nagłówka */
+  text-align: center; /* Wyśrodkowuje nagłówek */
+}
+
+#o-mnie p {
+  text-align: justify; /* Wyśrodkowuje opis */
+  max-width: 1000px; /* Ustawia maksymalną szerokość opisu */
+  margin: 0; /* Usuwa domyślne marginesy */
 }
 
 /*# sourceMappingURL=style.css.map */
