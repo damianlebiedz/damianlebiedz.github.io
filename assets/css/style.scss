@@ -1,0 +1,79 @@
+---
+---
+
+@import 'jekyll-theme-cayman';
+
+.page-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;   /* Ustawia elementy w kolumnie */
+  align-items: center;
+  justify-content: center;
+  background-image: url('{{ '/assets/images/52687160779_1ee6d66871_o.jpg' | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: transparent; /* Usuwa zielony kolor */
+}
+
+.project-name {
+  font-size: 4em;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.project-tagline {
+  font-size: 2.5em;
+  margin: 0px 0 20px;      /* Przestrzeń pomiędzy opisem a przyciskami */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  display: flex;
+  gap: 10px;                 /* Odstęp pomiędzy przyciskami */
+}
+
+.nav-button {
+  color: white;
+  background-color: #157878;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #125a5a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-footer {
+  margin: 20px; /* Dodaje margines wokół całej stopki */
+  padding: 20px; /* Dodaje wewnętrzny margines (padding) */
+  background-color: #f9f9f9; /* Opcjonalnie, zmiana koloru tła dla lepszego kontrastu */
+  text-align: center; /* Wyśrodkowuje tekst w stopce */
+  border-top: 1px solid #ccc; /* Opcjonalnie, dodaje górną ramkę dla wizualnego oddzielenia */
+}
+
+.nav-button {
+  background-color: #181818a1; /* Kolor tła guzika */
+  color: #ffffff; /* Kolor tekstu guzika */
+  padding: 10px 15px; /* Wewnętrzny margines dla lepszego wyglądu */
+  border: none; /* Usunięcie ramki */
+  border-radius: 5px; /* Zaokrąglenie rogów guzika */
+  text-decoration: none; /* Usunięcie podkreślenia tekstu */
+  transition: background-color 0.3s ease; /* Płynna zmiana koloru tła */
+}
+
+.nav-button:hover {
+  background-color: #0f4c47; /* Kolor tła guzika po najechaniu myszą */
+}
