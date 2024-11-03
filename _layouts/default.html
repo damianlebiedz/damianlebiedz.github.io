@@ -5,7 +5,7 @@
     {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <link rel="preload" href="{{ '/assets/images/52687160779_1ee6d66871_o.jpg' | relative_url }}" as="image">
+    <link rel="preload" href="{{ '/assets/images/spacex.jpg' | relative_url }}" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,57 +32,98 @@
         
         <!-- Sekcja Projekty -->
         <section id="projekty">
-            <h2>Projekty</h2>
-            <div class="project-tiles">
-                <a href="link-do-projektu-1.html" class="project-tile">
+            <div class="header-container">
+                <div class="header-line"></div>
+                <h1>Projekty</h1>
+                <div class="header-line"></div>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <a href="https://github.com/damianlebiedz/java-desktop-app" target="_blank" class="project-link">
+                        <img src="/assets/images/finance-manager.png" alt="Project Image" class="project-image">
+                        <div class="project-content">
+                            <h2 class="project-title">Mporter</h2>
+                            <p class="project-description">Flask web application for easy reporting updates to one’s mentor...</p>
+                            <div class="project-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">Celery</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <img src="image-url" alt="Project Image" class="project-image">
                     <div class="project-content">
-                        <h3>Projekt 1</h3>
-                        <p>Krótki opis projektu 1</p>
+                        <h2 class="project-title">Mporter</h2>
+                        <p class="project-description">Flask web application for easy reporting updates to one’s mentor...</p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">Python</span>
+                        </div>
                     </div>
-                </a>
-                <a href="link-do-projektu-2.html" class="project-tile">
+                </div>
+                <div class="project-card">
+                    <img src="image-url" alt="Project Image" class="project-image">
                     <div class="project-content">
-                        <h3>Projekt 2</h3>
-                        <p>Krótki opis projektu 2</p>
+                        <h2 class="project-title">Mporter</h2>
+                        <p class="project-description">Flask web application for easy reporting updates to one’s mentor...</p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">Python</span>
+                        </div>
                     </div>
-                </a>
-                <a href="link-do-projektu-3.html" class="project-tile">
+                </div>
+                <div class="project-card">
+                    <img src="image-url" alt="Project Image" class="project-image">
                     <div class="project-content">
-                        <h3>Projekt 3</h3>
-                        <p>Krótki opis projektu 3</p>
+                        <h2 class="project-title">Mporter</h2>
+                        <p class="project-description">Flask web application for easy reporting updates to one’s mentor...</p>
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Celery</span>
+                            <span class="tag">Python</span>
+                        </div>
                     </div>
-                </a>
-                <a href="link-do-projektu-4.html" class="project-tile">
-                    <div class="project-content">
-                        <h3>Projekt 4</h3>
-                        <p>Krótki opis projektu 4</p>
-                    </div>
-                </a>
-                <a href="link-do-projektu-5.html" class="project-tile">
-                    <div class="project-content">
-                        <h3>Projekt 5</h3>
-                        <p>Krótki opis projektu 5</p>
-                    </div>
-                </a>
-                <a href="link-do-projektu-6.html" class="project-tile">
-                    <div class="project-content">
-                        <h3>Projekt 6</h3>
-                        <p>Krótki opis projektu 6</p>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
+
+
         <!-- Sekcja O mnie -->
         <section id="o-mnie">
-            <h2>O mnie</h2>
-            <img src="/assets/images/moje_zdjęcie.png" alt="Moje zdjęcie">
+            <div class="header-container">
+                <div class="header-line"></div>
+                <h1>O mnie</h1>
+                <div class="header-line"></div>
+            </div>
+            <img src="/assets/images/moje_zdjęcie.png" alt="Moje zdjęcie" class="about-image">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec velit nisl. Nam pellentesque, dui sit amet congue congue, nisi massa gravida elit, vitae placerat nibh purus at justo. Curabitur ut aliquet erat. In hendrerit semper faucibus. Vestibulum dolor erat, maximus pharetra dictum semper, porta a lorem. Nullam nec posuere felis. Integer ultricies mauris augue, ac aliquet ligula vulputate non. Nulla ornare, lectus eu pulvinar commodo, ligula urna suscipit arcu, sed semper libero justo a lectus. Fusce ullamcorper nisl congue nisl imperdiet, in venenatis arcu fringilla. Maecenas commodo ipsum risus, id porta dolor viverra sit amet. Nulla et tellus posuere, facilisis massa sed, egestas libero. Vestibulum id vulputate augue. Donec eu consectetur nunc.</p>
+            <div class="icon-links">
+                <a href="https://github.com/damianlebiedz" target="_blank" class="icon-link">
+                    <img src="/assets/images/github-logo.png" alt="Github logo" class="icon-image">
+                    <i class="fab fa-github"></i>
+                </a>
+                <p>GitHub</p>
+                <a href="https:/linkedin.com/in/damian-lebied%C5%BA-440855336" target="_blank" class="icon-link">
+                    <img src="/assets/images/linkedin-logo.png" alt="Github logo" class="icon-image">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+                <p>Gmail</p>
+            </div>
+
         </section>
         
 
         <!-- Sekcja Umiejętności -->
         <section id="umiejetnosci">
-            <h2>Umiejętności</h2>
+            <div class="header-container">
+                <div class="header-line"></div>
+                <h1>Umiejętności</h1>
+                <div class="header-line"></div>
+            </div>
             <div class="skills-list">
                 <a href="link-do-skilla-1.html" class="skill-tile">
                     <div class="project-content">
@@ -133,6 +174,22 @@
           Official SpaceX Photos, <a href="https://flic.kr/p/2ogMtiM">Starlink Mission | SLC-40</a>,
           zdjęcie użyte na licencji <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>.
       </p>
+      <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Dave Gandy - Flaticon</a>
+      <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
     </footer>
+
+    <script>
+        document.querySelectorAll('.nav-button').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

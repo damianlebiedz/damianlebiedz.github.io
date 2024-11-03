@@ -3,28 +3,8 @@
 
 @import 'jekyll-theme-cayman';
 
-// Twoje własne style poniżej
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #111111;
-  color: #ffffff;
-}
-
-.page-header {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;   /* Ustawia elementy w kolumnie */
-  align-items: center;
-  justify-content: center;
-  background-image: url('{{ '/assets/images/52687160779_1ee6d66871_o.jpg' | relative_url }}');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  background-color: transparent; /* Usuwa zielony kolor */
+html {
+  scroll-behavior: smooth;
 }
 
 .project-name {
@@ -41,23 +21,19 @@ body {
   font-weight: 300;
 }
 
-nav {
+.page-header {
+  height: 100vh;
   display: flex;
-  gap: 10px;                 /* Odstęp pomiędzy przyciskami */
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.site-footer {
-  margin: 20px; /* Dodaje margines wokół całej stopki */
-  padding: 20px; /* Dodaje wewnętrzny margines (padding) */
-  background-color: #111111; /* Opcjonalnie, zmiana koloru tła dla lepszego kontrastu */
-  color: #ffffff; /* Biały kolor tekstu */
+  flex-direction: column;   /* Ustawia elementy w kolumnie */
+  align-items: center;
+  justify-content: center;
+  background-image: url('{{ '/assets/images/spacex.jpg' | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
   padding: 20px;
-  border-top: 1px solid #333333; /* Opcjonalna linia oddzielająca */
-  text-align: center; /* Wyśrodkowuje tekst w stopce */
+  background-color: transparent; /* Usuwa zielony kolor */
 }
 
 .nav-button {
@@ -75,24 +51,149 @@ html {
   text-decoration: none; /* Usunięcie podkreślenia tekstu */
 }
 
-.project-tiles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trzy kolumny */
+nav {
+  display: flex;
+  gap: 10px;                 /* Odstęp pomiędzy przyciskami */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.project-header {
+  font-size: 2em;
+  text-align: center;
+  margin: 30px 0px 20px 0; /* Odstęp nad i pod nagłówkiem */
+}
+
+.header-line {
+  position: relative;
+  width: 97vw; /* Pełna szerokość okna przeglądarki */
+  height: 1px;
+  background-color: #333333;
+  margin: 30px 0; /* Odstęp między linią a nagłówkiem */
+  left: 50%; /* Wyrównaj środek */
+  transform: translateX(-50%); /* Wyśrodkuj */
+}
+
+#projekty {
+  text-align: center; /* Wyrównuje tytuł i kafelki na środku */
+  padding: 40px 0; /* Dodaje przestrzeń nad i pod sekcją */
+}
+
+#o-mnie h1 {
+  color: white;
+  text-align: center;
+}
+
+#projekty h1 {
+  color: white;
+  text-align: center;
+}
+
+#projekty h2 {
+  color: white;
+  text-align: center;
+}
+
+#projekty h3 {
+  color: white;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px; /* Odstęp między kafelkami */
-  color: black;
+  justify-content: center;
+  max-width: 1000px; /* Maksymalna szerokość kontenera */
 }
 
-.project-tile {
-  background-color: rgb(100, 100, 100); /* Kolor tła dla kafelka */
-  border-radius: 8px; /* Zaokrąglenie rogów */
-  overflow: hidden; /* Ukrycie nadmiaru */
-  text-decoration: none; /* Usunięcie podkreślenia linków */
-  color: black;
+.project-card {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
-.project-tile img {
-  width: 100%; /* Szerokość obrazka */
-  height: auto; /* Automatyczna wysokość */
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 50%;
+  transition: transform 0.3s ease; /* Płynne przejście */
+  object-fit: cover; /* Przycinanie obrazu, aby wypełnił kontener */
+}
+
+.project-image:hover {
+  transform: scale(1.1); /* Przybliżenie o 10% */
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-title {
+  font-size: 1.2em;
+  color: black;
+  margin: 0;
+}
+
+.project-description {
+  font-size: 0.9em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+
+#o-mnie {
+  display: flex;
+  flex-direction: column; /* Ustawia elementy w kolumnie */
+  align-items: center; /* Wyrównuje elementy do środka */
+  padding: 40px 0; /* Przestrzeń nad i pod sekcją */
+}
+
+.about-image {
+  width: 280px; /* Szerokość zdjęcia */
+  height: 280px; /* Wysokość zdjęcia */
+  border-radius: 50%; /* Ustawia zdjęcie w kształcie okręgu */
+  margin: 20px 0px; /* Przestrzeń nad i pod zdjęciem */
+}
+
+#o-mnie h2 {
+  margin: 0 0 10px; /* Ustawia margines dla nagłówka */
+  text-align: center; /* Wyśrodkowuje nagłówek */
+  color: white;
+  text-align: center;
+}
+
+#o-mnie p {
+  text-align: justify; /* Wyśrodkowuje opis */
+  max-width: 1000px; /* Ustawia maksymalną szerokość opisu */
+  margin: 10px 0px; /* Usuwa domyślne marginesy */
 }
 
 .about-container {
@@ -100,11 +201,40 @@ html {
   align-items: center; /* Wyrównanie w pionie */
 }
 
-.about-image {
-  border-radius: 50%; /* Okrągłe zdjęcie */
-  width: 150px; /* Szerokość zdjęcia */
-  height: 150px; /* Wysokość zdjęcia */
-  margin-right: 20px; /* Odstęp między zdjęciem a tekstem */
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.icon-link {
+  font-size: 40px;
+  color: #ffffff; /* Kolor ikony */
+  text-decoration: none;
+}
+
+.icon-link + p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #858585; /* Kolor tekstu */
+  text-align: center;
+}
+
+.icon-image {
+  width: 80px; /* Szerokość zdjęcia */
+  height: 80px; /* Wysokość zdjęcia */
+  border-radius: 50%; /* Ustawia zdjęcie w kształcie okręgu */
+  margin: 20px 0px; /* Przestrzeń nad i pod zdjęciem */
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.icon-image:hover {
+  transform: translateY(-5px);
 }
 
 .skills-list {
@@ -127,22 +257,7 @@ html {
   height: auto; /* Automatyczna wysokość */
 }
 
-#projekty {
-  text-align: center; /* Wyrównuje tytuł i kafelki na środku */
-  padding: 40px 0; /* Dodaje przestrzeń nad i pod sekcją */
-}
-
-#projekty h2 {
-  color: white;
-  text-align: center;
-}
-
-#projekty h3 {
-  color: white;
-  text-align: center;
-}
-
-#o-mnie h2 {
+#umiejetnosci h1 {
   color: white;
   text-align: center;
 }
@@ -156,35 +271,12 @@ html {
   color: white;
 }
 
-.project-content h3 {
-  margin: 0; /* Usuwa domyślne marginesy nagłówka */
-}
-
-.project-content p {
-  margin-top: 10px; /* Dodaje przestrzeń pomiędzy nagłówkiem a opisem */
-}
-
-#o-mnie {
-  display: flex;
-  flex-direction: column; /* Ustawia elementy w kolumnie */
-  align-items: center; /* Wyrównuje elementy do środka */
-  padding: 40px 0; /* Przestrzeń nad i pod sekcją */
-}
-
-#o-mnie img {
-  width: 250px; /* Szerokość zdjęcia */
-  height: 250px; /* Wysokość zdjęcia */
-  border-radius: 50%; /* Ustawia zdjęcie w kształcie okręgu */
-  margin: 20px 0px; /* Przestrzeń nad i pod zdjęciem */
-}
-
-#o-mnie h2 {
-  margin: 0 0 10px; /* Ustawia margines dla nagłówka */
-  text-align: center; /* Wyśrodkowuje nagłówek */
-}
-
-#o-mnie p {
-  text-align: justify; /* Wyśrodkowuje opis */
-  max-width: 1000px; /* Ustawia maksymalną szerokość opisu */
-  margin: 0; /* Usuwa domyślne marginesy */
+.site-footer {
+  margin: 20px; /* Dodaje margines wokół całej stopki */
+  padding: 20px; /* Dodaje wewnętrzny margines (padding) */
+  background-color: #111111; /* Opcjonalnie, zmiana koloru tła dla lepszego kontrastu */
+  color: #ffffff; /* Biały kolor tekstu */
+  padding: 20px;
+  border-top: 1px solid #333333; /* Opcjonalna linia oddzielająca */
+  text-align: center; /* Wyśrodkowuje tekst w stopce */
 }
