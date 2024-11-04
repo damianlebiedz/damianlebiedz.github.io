@@ -1,6 +1,4 @@
-# Portfolio
-
-## W TRAKCIE TWORZENIA
+# Portfolio | W TRAKCIE TWORZENIA
 
 Strona portfolio zbudowana za pomocą Github Pages i szablonu Cayman: https://github.com/pages-themes/cayman.
 
