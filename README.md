@@ -6,4 +6,4 @@ Do personalizacji strony pod własne podtrzeby użyłem HTML i CSS.
 
 https://damianlebiedz.github.io
 
-W TRAKCIE TWORZENIA
+## W TRAKCIE TWORZENIA
