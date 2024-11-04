@@ -4,4 +4,4 @@ Strona portfolio zbudowana za pomocą Github Pages i szablonu Cayman: https://gi
 
 Do personalizacji strony pod własne podtrzeby użyłem HTML i CSS.
 
-damianlebiedz.github.io
+https://damianlebiedz.github.io
