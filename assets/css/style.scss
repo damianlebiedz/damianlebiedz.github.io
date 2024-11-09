@@ -85,18 +85,13 @@ body {
   padding: 40px 0; /* Dodaje przestrzeń nad i pod sekcją */
 }
 
-#o-mnie h1 {
-  color: white;
-  text-align: center;
-}
-
 #projekty h1 {
   color: white;
   text-align: center;
 }
 
 #projekty h2 {
-  color: black;
+  color: rgb(196, 196, 196);
   font-weight: bold;
 }
 
@@ -116,7 +111,7 @@ body {
 .project-card {
   width: 400px;
   height: 400px;
-  background-color: white;
+  background-color: rgb(40 40 40 / 48%);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -153,9 +148,9 @@ body {
 
 .project-content {
   padding: 15px;
-    background-color: white;
-    display: block;
-    height: auto; /* Umożliwia dostosowanie wysokości do zawartości */
+  background-color: rgb(31 31 31 / 41%);
+  display: block;
+  height: 193px;
 }
 
 .project-title {
@@ -168,7 +163,7 @@ body {
 
 .project-description {
   font-size: 0.9em;
-  color: #555;
+  color: #bebebe;
   margin: 10px 0;
 }
 
@@ -180,8 +175,8 @@ body {
 }
 
 .tag {
-  background-color: #e0e0e0;
-  color: #333;
+  background-color: #0e0e0e;
+  color: #c2c2c2;
   padding: 3px 8px;
   border-radius: 4px;
   font-size: 0.8em;
@@ -201,6 +196,11 @@ body {
   margin: 20px 0px; /* Przestrzeń nad i pod zdjęciem */
 }
 
+#o-mnie h1 {
+  color: white;
+  text-align: center;
+}
+
 #o-mnie h2 {
   margin: 0 0 10px; /* Ustawia margines dla nagłówka */
   text-align: center; /* Wyśrodkowuje nagłówek */
@@ -211,7 +211,8 @@ body {
 #o-mnie p {
   text-align: justify; /* Wyśrodkowuje opis */
   max-width: 1000px; /* Ustawia maksymalną szerokość opisu */
-  margin: 10px 0px; /* Usuwa domyślne marginesy */
+  margin: 20px 0px; /* Usuwa domyślne marginesy */
+  text-align: center;
 }
 
 .about-container {
@@ -223,13 +224,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   margin-top: 15px;
   text-align: center;
 }
 
 .icon-link {
-  font-size: 40px;
+  font-size: 20px;
   color: #ffffff; /* Kolor ikony */
   text-decoration: none;
 }
@@ -245,7 +246,7 @@ body {
   width: 80px; /* Szerokość zdjęcia */
   height: 80px; /* Wysokość zdjęcia */
   border-radius: 50%; /* Ustawia zdjęcie w kształcie okręgu */
-  margin: 20px 0px; /* Przestrzeń nad i pod zdjęciem */
+  margin: 0px 0px; /* Przestrzeń nad i pod zdjęciem */
   background-color: white;
   overflow: hidden;
   transition: transform 0.3s;
@@ -275,6 +276,20 @@ body {
   height: auto; /* Automatyczna wysokość */
 }
 
+.icon-content {
+  padding: 15px;
+  background-color: #111111;
+  display: block;
+  height: 193px;
+  color: white;
+  text-align: center;
+}
+
+.icon-content p {
+  color: rgba(255, 255, 255, 0.437);
+  font-size: 15px;
+}
+
 #umiejetnosci h1 {
   color: white;
   text-align: center;
@@ -297,4 +312,5 @@ body {
   padding: 20px;
   border-top: 1px solid #333333; /* Opcjonalna linia oddzielająca */
   text-align: center; /* Wyśrodkowuje tekst w stopce */
+  font-size: 13px;
 }
