@@ -1,7 +1,3 @@
-# Portfolio
+# https://damianlebiedz.github.io
 
-Strona portfolio zbudowana za pomocą Github Pages i szablonu Cayman: https://github.com/pages-themes/cayman.
-
-Do personalizacji strony pod własne podtrzeby użyłem HTML i CSS.
-
-https://damianlebiedz.github.io
+Portfolio's site created using Cayman theme: https://github.com/pages-themes/cayman.
