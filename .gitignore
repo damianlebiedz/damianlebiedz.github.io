@@ -1,7 +1,5 @@
 _site
 .sass-cache
-Gemfile.lock
 *.gem
 .jekyll-cache
 _script
-jekyll-theme-cayman.gemspec
