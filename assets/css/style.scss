@@ -105,6 +105,10 @@
 
 @media (max-width: 768px) {
 
+  html {
+    background-image: none;
+  }
+
   .header-container {
       text-align: center;
       padding: 10px; /* Zmniejszenie paddingu */
@@ -129,7 +133,7 @@
   }
 
   .site-footer-credits {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
 
   nav {
@@ -150,7 +154,7 @@
   .header-container h1 {
     margin-bottom: 0;
   }
-  
+
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
@@ -158,9 +162,10 @@
   .project-card {
     background-color: #000000cc;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #0000001a;
+    box-shadow: 0px 0px 4px 1px #5e5e5e;
     overflow: hidden;
     transition: transform 0.3s;
+    
   }
   
   .project-card:hover {
@@ -170,7 +175,6 @@
   .project-content {
     text-align: left;
     padding: 5px 20px;
-    background-color: #1f1f1f69;
     display: block;
     height: 193px;
   }
@@ -343,6 +347,16 @@
     text-align: left;
     color: rgb(186, 186, 186);
     margin-top: 0rem;
+  }
+
+  .education-uw {
+    border: 1px;
+    border-left-style: solid;
+    border-left-color: #c4c4c4;
+  }
+
+  .education-uw p, h2 {
+    margin: 0 0 0 10px;
   }
 
 
