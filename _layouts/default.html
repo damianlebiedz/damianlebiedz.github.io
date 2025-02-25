@@ -1,223 +1,25 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'pl-PL' }}">
-<head>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
     <meta charset="UTF-8">
-    {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <link rel="preload" href="{{ '/assets/images/spacex.jpg' | relative_url }}" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
     <header class="page-header" role="banner">
-      <h1 class="project-name">Damian Lebiedź</h1>
-      <h2 class="project-tagline">PORTFOLIO</h2>
-        
-        <!-- Przyciski nawigacyjne -->
-        <nav>
-            <a href="#projekty" class="nav-button">Projekty</a>
-            <a href="#o-mnie" class="nav-button">O mnie</a>
-            <a href="#umiejetnosci" class="nav-button">Umiejętności</a>
-        </nav>
+      {% include header.html %}
     </header>
-
     <main id="content" class="main-content" role="main">
-        
-        <!-- Sekcja Projekty -->
-        <section id="projekty">
-            <div class="header-container">
-                <div class="header-line"></div>
-                <h1>Projekty</h1>
-                <div class="header-line"></div>
-            </div>
-            <div class="project-container">
-                <div class="project-card">
-                    <a href="https://github.com/damianlebiedz/cpp-langtons-ant" target="_blank" class="project-link">
-                        <img src="/assets/images/cpp-langtons-ant.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h2 class="project-title">cpp-langtons-ant</h2>
-                            <p class="project-description">Symulacja mrówki Langtona w C++.</p>
-                            <div class="project-tags">
-                                <span class="tag">C++</span>
-                                <span class="tag">SFML</span>
-                                <span class="tag">CMake</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/damianlebiedz/java-desktop-app" target="_blank" class="project-link">
-                        <img src="/assets/images/java-desktop-app.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h2 class="project-title">java-desktop-app</h2>
-                            <p class="project-description">Aplikacja desktopowa CRUD napisana w Javie do zarządzania wydatkami budżetu domowego.</p>
-                            <div class="project-tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">JavaFX</span>
-                                <span class="tag">H2 Database</span>
-                                <span class="tag">Maven</span>
-                                <span class="tag">CSS</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/damianlebiedz/damianlebiedz.github.io" target="_blank" class="project-link">
-                    <img src="/assets/images/damianlebiedz.github.io.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h2 class="project-title">damianlebiedz.github.com</h2>
-                            <p class="project-description">Portfolio</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">Github Pages</span>
-                                <a href="https://github.com/pages-themes/cayman" target="_blank" class="project-link">
-                                    <span class="tag">Cayman</span>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/damianlebiedz/py-trading-backtesting" target="_blank" class="project-link">
-                        <img src="/assets/images/py-credit-risk-analysis.png" alt="Project Image" class="project-image">
-                        <div class="project-content">
-                            <h2 class="project-title">py-trading-backtesting</h2>
-                            <p class="project-description">Testowanie strategii inwestycyjnych w Pythonie.</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">pandas</span>
-                                <span class="tag">matplotlib</span>
-                                <span class="tag">backtester</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        </section>
-
-
-        <!-- Sekcja O mnie -->
-        <section id="o-mnie">
-            <div class="header-container">
-                <div class="header-line"></div>
-                <h1>O mnie</h1>
-                <div class="header-line"></div>
-            </div>
-            <img src="/assets/images/moje_zdjęcie.png" alt="Moje zdjęcie" class="about-image">
-            <p>Jestem studentem drugiego roku Informatyki i Ekonometrii na Wydziale Nauk Ekonomicznych UW. Interesuję się analizą danych i sztuczną inteligencją. Aktualnie jestem w trakcie nauki języka Python oraz teoretycznych podstaw uczenia maszynowego.</p>
-            <div class="icon-links">
-                <a href="https://github.com/damianlebiedz" target="_blank" class="icon-link">
-                <img src="/assets/images/github-mark-white.svg" alt="Github logo" class="icon-image">
-                </a>
-            </div>
-        </section>
-        
-
-        <!-- Sekcja Umiejętności -->
-        <section id="umiejetnosci">
-            <div class="header-container">
-                <div class="header-line"></div>
-                <h1>Umiejętności</h1>
-                <div class="header-line"></div>
-            </div>
-            <div class="skills-list">
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>Java</h3>
-                        <img src="/assets/images/pb-java.svg" alt="Project Image" class="project-image">
-                        <p>Tworzenie prostych aplikacji desktopowych wykorzystując JavaFX i bazy danych.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>C++</h3>
-                        <img src="/assets/images/pb-cpp.svg" alt="Project Image" class="project-image">
-                        <p>Podstawowe algorytmy, tablice, wskaźniki, proste aplikacje dekstopowe przy użyciu SFML.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>Python</h3>
-                        <img src="/assets/images/pb-python.svg" alt="Project Image" class="project-image">
-                        <p>Podstawowa analiza danych.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>R</h3>
-                        <img src="/assets/images/pb-r.svg" alt="Project Image" class="project-image">
-                        <p>Podstawy składni.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>Excel</h3>
-                        <img src="/assets/images/pb-excel.svg" alt="Project Image" class="project-image">
-                        <p>Wykresy, tabele przestawne, sortowanie, przeszukiwanie, podstawowy VBA.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>HTML&CSS</h3>
-                        <img src="/assets/images/pb-htmlcss.svg" alt="Project Image" class="project-image">
-                        <p>Tworzenie podstawowych stron internetowych.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>Git</h3>
-                        <img src="/assets/images/pb-git.svg" alt="Project Image" class="project-image">
-                        <p>Podstawy git, obsługa z poziomu konsoli.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>Grafika</h3>
-                        <img src="/assets/images/pb-graphic.svg" alt="Project Image" class="project-image">
-                        <p>Podstawowy montaż w DaVinci Resolve, edycja grafik rastrowych i wektorowych, prototypowanie w Figmie.</p>
-                    </div>
-                </a>
-                <a class="skill-tile">
-                    <div class="icon-content">
-                        <h3>j. angielski</h3>
-                        <img src="/assets/images/pb-ang.svg" alt="Project Image" class="project-image">
-                        <p>Poziom B2.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+      {{ content }}
     </main>
-
     <footer class="site-footer">
-        {% if site.github.is_project_page %}
-            <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-        <p>
-          Official SpaceX Photos, <a href="https://flic.kr/p/2ogMtiM">Starlink Mission | SLC-40</a>,
-          zdjęcie użyte na licencji <a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>.
-      </p>
+      {% include footer.html %}
     </footer>
-
-    <script>
-        document.querySelectorAll('.nav-button').forEach(button => {
-            button.addEventListener('click', function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
-
-</body>
+    </div>
+  </body>
 </html>
