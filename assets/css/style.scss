@@ -350,13 +350,20 @@
   }
 
   .education-uw {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .education-text {
     border: 1px;
     border-left-style: solid;
     border-left-color: #c4c4c4;
+    background-color: rgba(0, 0, 0, 0.327);
   }
 
   .education-uw p, h2 {
-    margin: 0 0 0 10px;
+    margin: 0 10px 0 10px;
   }
 
 
@@ -435,6 +442,13 @@
     background-color: transparent;
     overflow: hidden;
     transition: transform 0.3s;
+  }
+
+  .uw-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
   }
   
   .icon-image:hover {
